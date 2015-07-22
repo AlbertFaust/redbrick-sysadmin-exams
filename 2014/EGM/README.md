@@ -7,7 +7,7 @@ Redbrick System Administration Exams
 </p>
 ------------
 #### General (30 marks)
-1. What is the default shell of new users on Redbrick (3 marks)
+1. What is the default shell of new users on Redbrick? (3 marks)
 2. What is Redbrick's primary login server? Name two other servers (3 marks)
 3. What temperature should the server room be kept at? (2 marks)
 4. What does nagios do? Why do we use it? How does it work? (4 marks)
@@ -15,8 +15,8 @@ Redbrick System Administration Exams
 6. What are ALOM,ILOM and DRAC and why do admins love them? (3 marks)
 7. What is a ulimit, why do we impose them on servers other than the development server? (3 marks)
 8. Why would you use a managed PDU instead of a PDU? What does PDU stand for? (3 marks)
-9. What does SNMP stand for? (2 marks)
-10.What protocol allows us to mount /storage over multiple servers? (3 marks)
+9. What does SNMP stand for? (2 marks)  
+10. What protocol allows us to mount /storage over multiple servers? (3 marks)
 
 #### [Linux (30 Marks)](https://github.com/AlbertFaust/redbrick-sysadmin-exams/blob/master/2014/EGM/Linux.md)
 1. What flavour of linux do we use on the majority of Redbrick Servers? And what version? (3 marks)
@@ -28,7 +28,7 @@ Redbrick System Administration Exams
 7. What is apt? Why do we use it? (3 marks)
 8. What command would you use to find the process id running as a particular user? How would you kill just that process (4 marks)
 9. chmod and chown, what do they do? and for each give the syntax they use (4 marks, 2 per command)
-10.What command would you run to update to the latest version of OS available on a Redbrick server? (3 marks)
+10. What command would you run to update to the latest version of OS available on a Redbrick server? (3 marks)
 
 #### BSD (30 marks)
 
@@ -41,7 +41,7 @@ Redbrick System Administration Exams
 7. Show me how to find the routing table in BSD (3 marks)
 8. What is ports in BSD? How do I update them? (3 marks)
 9. In FreeBSD; what is a jail? Why would one use it? (3 marks)
-10.You just got your root talk as an admin, and were added to the root group on a freebsd box, Why does this allow you to do jack all? (3 marks)
+10. You just got your root talk as an admin, and were added to the root group on a freebsd box, Why does this allow you to do jack all? (3 marks)
 
 #### Security (30 marks)
 
@@ -65,13 +65,13 @@ Redbrick System Administration Exams
 5. You've added a new disk to a machine mount /zergless/potato on it (2 marks)
 6. drwxrw-rw- what is this permission in octal format? (3 marks)
 7. What is NFS? Do we use it in Redbrick? If so where? (4 marks)
-8. What are the following?
-i) ctime
-ii) atime
-iii) mtime
+8. What are the following?  
+i) ctime  
+ii) atime  
+iii) mtime  
 (1 mark each)
 9. What is the difference between /etc/mtab & /etc/fstab (3 marks)
-10.How would you force unmount a 'busy' directory? (3 marks)
+10. How would you force unmount a 'busy' directory? (3 marks)
 
 #### Practical (37 marks)
 
@@ -104,25 +104,25 @@ For this practical we have setup a raspberyr pi for you with login details provi
 7. What is an IP-KVM? Why should we use one (3 marks)
 8. Tell me how to get the UUiD of a disk (2 marks)
 9. Why do our servers have two power supplies? What 2 pieces of hardware do we use in conjunction with them to ensure maximum redundancy and uptime? (5 marks)
-10.Where would you mount a UPS? Why? (2 marks)
+10. Where would you mount a UPS? Why? (2 marks)
 
 #### Networking (30 marks)
 
 1. What are the 3 'private' IPv4 address spaces (3 marks)
-2. What is the subnet mask of a
-i) /8
-ii) /24
-iii)/29
+2. What is the subnet mask of a  
+i) /8  
+ii) /24  
+iii) /29  
 IPv4 Subnet. (3 marks)
 3. If 127.0.0.1 is the v4 local loopback address, what is the IPv6 one? (2 marks)
 4. What protocol is used to distribute routes on the internet? (2 marks)
-5. What do
-i) HTTPS
-ii)DNS
-iii) DHCP
+5. What do  
+i) HTTPS  
+ii) DNS  
+iii) DHCP  
 stand for and what ports & protocols do they use by default (6 marks)
 6. We use Cisco switches; how do you show the running configuration on one of our switches? (2 marks)
 7. What does NAT stand for? What does it do? (4 marks)
 8. How many disparate networks are there in the Redbrick environment? Why? (3 marks)
 9. What are privilieged ports? What port number is the priv/unpriv border? (2 marks)
-10.What does VPN stand for? What does it do? (3 marks)
+10. What does VPN stand for? What does it do? (3 marks)
