@@ -6,7 +6,7 @@ Redbrick System Administration Exams
 <a href="http://www.redbrick.dcu.ie/help/exams/admin-2014-egm">2014 EGM</a>
 </p>
 ------------
-#### General (30 marks)
+#### [General (30 marks)](https://github.com/AlbertFaust/redbrick-sysadmin-exams/blob/master/2014/EGM/General.md)
 1. What is the default shell of new users on Redbrick? (3 marks)
 2. What is Redbrick's primary login server? Name two other servers (3 marks)
 3. What temperature should the server room be kept at? (2 marks)
