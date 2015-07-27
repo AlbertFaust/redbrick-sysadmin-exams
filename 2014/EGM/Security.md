@@ -36,6 +36,16 @@ Additionally, using SSH keys for authentication virtually eliminates the risk po
   `sudo apt-get install unattended-upgrades` this will install the unattended-upgrades package.  
   `sudo dpkg-reconfigure -plow unattended-upgrades` this will enable and configure the default configs.  
 7. **Why is ssh as root disabled on our machines?** (2 marks)<br>
+If ssh as root is permitted on a machine then a brute force attacker can try brute force `ssh root@$IP`. If they succeed then they have root access and complete control of the machine. If ssh as root is not permitted then they must first find a privilidged user with sudoer rights to ssh as.  
+Also sudo reduces accidents by restricting commands to a reduced "remotely available" set.  
 8. **Name 3 files that should only be readable by root and what they do.** (4 marks)<br>
+`/etc/shadow` and `/etc/gshadow` - contain encrypted user passwords and group account information.  
+`/etc/passwd` - contains user information required at login.  
+`/etc/sudoers` - controls who can run certain commands and whether you need a password for particular command  
 9. **Why would you set the sticky bit on a file?** (3 marks)<br>
+A sticky bit is a permission bit that is set on a directory that allows only the owner of the file within that directory or the root user to delete or rename the file. No other user has the needed privileges to delete the file created by some other user.  
+The sticky bit is useful on directories that are world-writable, such as /tmp. In these directories, anyone can create a file, so the directory needs to be world-writable. But that would mean anyone could delete a file, too, even if it didn't belong to them, since deleting a file is controlled by the write permission on the directory. When a directory has the sticky bit, only the owner of a file has the permission to delete it.  
+`chmod +t /path/to/directory/` adds the sticky bit permission to a directory
 10. **You left a root terminal unlocked and someone has used it to do something. The history files has been deleted. How do you go about finding out what they did?** (4 marks)<br>
+The first thing to do is read the .bash_history file and see what it contains: `cat ~/.bash_history`  
+If this file is empty try logging out and back in. If the user did `history -c` or `cat /dev/null > ~/.bash_history` then .bash_history will show the commands. (the history entries have a copy in the memory and it will flush back to the file when you log out.) If the user deleted the history with `history -c && history -w` or `cat /dev/null > ~/.bash_history && history -c && exit` then the history is lost. 
