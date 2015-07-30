@@ -10,6 +10,6 @@ do
     fi
   done | sort -nr | head -3`
   if [ "$int" -ge 90 ]; then
-    echo -e "$user's home directory is more than 90% full.\nThe 3 largest files are: \n$files" | mail -s "User Directory Almost Full" "admins@redbrick.dcu.$
+    echo -e "$user's home directory is more than 90% full.\nThe 3 largest files are: \n$files" | mail -s "User Directory Almost Full" "admins@redbrick.dcu.ie"
   fi
 done < users.txt
