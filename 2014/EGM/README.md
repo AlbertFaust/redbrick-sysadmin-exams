@@ -85,7 +85,7 @@ For this practical we have setup a raspberyr pi for you with login details provi
 6. You notice that 'sillyuser' account has been compromised. His home dir and files may have been compromised. Make a tar.gz of sillyusers home dir then make sure that he can't access it anymore (6 marks)
 7. You have a copy of sillyuser's home dir and his files are secure now you need to take appropriate actions. List the actions you would take. Minimum of 3 (3 marks per action +1 extra mark if its really inventive)
 
-#### Scripting (40 marks)
+#### [Scripting (40 Marks)](https://github.com/AlbertFaust/redbrick-sysadmin-exams/blob/master/2014/EGM/Scripting.md)
 
 1. Create an alphabetically sorted, unique list of all members currently active on your current machine Output this to a .txt file(4 marks)
 2. With this txt file amend @redbrick.dcu.ie is at the end of each name. (5 marks)
