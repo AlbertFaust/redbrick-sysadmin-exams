@@ -56,7 +56,7 @@ Redbrick System Administration Exams
 9. Why would you set the sticky bit on a file? (3 marks)
 10. You left a root terminal unlocked and someone has used it to do something. The history files has been deleted. How do you go about finding out what they did? (4 marks)
 
-#### Files & Filesystems (30 marks)
+#### [Files & Filesystems (30 Marks)](https://github.com/AlbertFaust/redbrick-sysadmin-exams/blob/master/2014/EGM/Files-and-Filesystems.md)
 
 1. Name 3 different types of filesystems (3 marks)
 2. What does it mean when a filesystem is described as being journalled? (2 marks)
